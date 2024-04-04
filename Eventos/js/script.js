@@ -95,3 +95,12 @@ const frutaComL = frutas.find(fruta => fruta.startsWith("L"));
 console.log(`Fruta com L ${frutaComL}`);
 
 // Percorrer todas as frutas e imprimir seus nomes usando forEach
+frutas.forEach(fruta => console.log(`Nome da fruta: ${fruta}`));
+
+// Mapear as frutas para seus tamanhos (em cm) usando map()
+const tamanhosFrutas = frutas.map(fruta => fruta.length);
+console.log(`Tamanhos das frutas: ${tamanhosFrutas}`);
+
+// Juntar os nomes das frutas em uma string usando join()
+const listaFrutas = frutas.join(", ");
+console.log(`Lista de frutas: ${listaFrutas}`);
